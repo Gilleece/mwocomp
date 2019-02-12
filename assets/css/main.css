@@ -1,7 +1,13 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-
+@font-face {
+    font-family: "EurostileExtended";
+    src: url(https://www.wfonts.com/download/data/2015/06/18/eurostile-extended/EurostileExtended.ttf) format("truetype");
+}
+p.customfont { 
+    font-family: "EurostileExtended";
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -18,7 +24,6 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -196,12 +201,14 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.25rem;
+		font-family: "Eurostile Extended";
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
 	}
 
 	h2 {
 		font-size: 1.5rem;
+		font-family: "Eurostile Extended";
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 		color: #ffa51e;
@@ -228,6 +235,7 @@ input, select, textarea {
 		h1 {
 			font-size: 1.75rem;
 			line-height: 1.4;
+			font: "EurostileExtended";
 		}
 
 		h2 {
@@ -1089,6 +1097,27 @@ input, select, textarea {
 	button {
 		line-height: calc(2.75rem - 2px);
 	}
+	.maptool {
+		background-color: white;
+		color: black;
+		}
+	.maptool:hover {
+		background-color: white;
+		animation-name: maptoolpulse;
+		animation-duration: 1.4s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes maptoolpulse {
+		0% {
+		  background-color: white;
+		}
+		50% {
+			background-color: rgb(224, 149, 37);
+		}
+		100% {
+			background-color: white;
+		}
+	}
 
 /* BG */
 
@@ -1535,6 +1564,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#main article.blog {
+			width: 80rem;
+		}
+
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
@@ -1606,6 +1639,7 @@ input, select, textarea {
 			}
 
 		}
+		
 
 /* Footer */
 
