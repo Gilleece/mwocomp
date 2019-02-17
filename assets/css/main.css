@@ -115,7 +115,19 @@ input, select, textarea {
 	-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
 	animation: sk-rotateplane 1.2s infinite ease-in-out;
   }
-  
+
+  .homebutton {
+	width: 80px;
+	height: 58px;
+	background-color: rgba(0, 0, 0, 0);
+	/*background-image:   url("../../images/homebutton.png");*/
+	background-size: fill, 60px 60px;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+  }
+
+
   @-webkit-keyframes sk-rotateplane {
 	0% { -webkit-transform: perspective(120px) }
 	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
@@ -145,6 +157,15 @@ input, select, textarea {
 	z-index: 999999;
 	}
 
+	.homebutton-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		background-color: #00000000;
+		z-index: 999998;
+		}
 
 /* Type */
 
@@ -1410,7 +1431,7 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.7rem;
+					font-size: 0.6rem;
 					border-bottom: 0;
 				}
 
