@@ -1715,3 +1715,17 @@ input, select, textarea {
 
 		/* Patches Page */
 		
+		.c18 {
+			max-width: 100vh !important;
+		}
+
+		.eyeframe {
+			height: 100vh; 
+			width: 50%;
+		}
+
+		@media (max-width: 767.98px) { 
+			.eyeframe {
+				width: 100%;
+			}			
+		}
