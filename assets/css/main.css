@@ -145,6 +145,9 @@ input, select, textarea {
 	z-index: 999999;
 	}
 
+	.placement-text {
+		font-size: 70%;
+	}
 
 /* Type */
 
